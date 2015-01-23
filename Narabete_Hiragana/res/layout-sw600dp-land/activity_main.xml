@@ -1,0 +1,139 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:id="@+id/activity_main_relativeLayout_root"
+    android:background="@drawable/bg_main" >
+
+    
+    <!-- 「せいかい！」など各種メッセージを表示するメッセージボード -->
+    <LinearLayout 
+        android:id="@+id/activity_main_linearLayout_messageboard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:orientation="horizontal"
+        android:background="@drawable/bg_messageboard" >   
+    	<TextView 
+	        android:id="@+id/activity_main_textView_messageBoard"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:layout_gravity="center_vertical"
+	        android:gravity="center"
+	        android:textSize="19sp"
+	        style="@style/BaseTextStyle" />
+    	 <ImageView 
+            android:id="@+id/activity_main_imgView_onMessageBoard"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="bottom"
+            android:scaleType="centerInside"
+            android:background="@null"
+            android:src="@null"
+            android:contentDescription="@null"/>	        
+    </LinearLayout>
+    
+    
+	<!-- 話者の選択ボタン -->
+	<ImageButton 
+	    style="@style/VoiceSelectImageButtonStyle"
+	    android:id="@+id/activity_main_imgBtn_voice"
+	    android:layout_below="@+id/activity_main_linearLayout_messageboard"
+	    android:layout_alignParentRight="true"
+	    android:contentDescription="@string/koe_wo_kaeru"/>
+    
+    
+    <!-- 「よくできました」という画像などを中央に表示するためのImageView -->
+	<ImageView
+	    android:id="@+id/activity_main_imgView_center"
+	    android:layout_width="150dp"
+	    android:layout_height="150dp"
+	    android:layout_centerHorizontal="true"
+	    android:layout_above="@+id/activity_main_anchor_1"
+	    android:scaleType="centerInside"
+	    android:background="@null"
+	    android:src="@drawable/stamp_yokudekimasita"
+	    android:contentDescription="@null"
+	    android:visibility="gone" />
+    
+	
+	<!-- 「よくできました」画像と「つぎのもんだいへ」ボタンの位置を決定するためのアンカー用View。ユーザーには見えない -->
+	<View 
+	    android:id="@+id/activity_main_anchor_1"
+	    android:layout_width="0dp"
+	    android:layout_height="0dp"
+	    android:layout_centerInParent="true"
+	    android:background="#00000000"
+	    android:visibility="invisible"/>
+	
+    
+	<!-- 文字カード3枚 -->    
+  	<Button
+	    android:id="@+id/activity_main_btn_cardA"
+	    android:layout_centerInParent="true"
+	    style="@style/CharCardButtonStyle"/>		
+	<Button
+	    android:id="@+id/activity_main_btn_cardB" 
+	    android:layout_centerInParent="true"
+	    style="@style/CharCardButtonStyle"/>	
+	<Button
+	    android:id="@+id/activity_main_btn_cardC"
+	    android:layout_centerInParent="true"
+	    style="@style/CharCardButtonStyle"/>
+   		
+	
+	<!-- 四角い点線の答えドロップ領域3個 -->
+	<jp.ne.docomo.smt.dev.narabetehiragana.AnswerAreaView
+	    android:id="@+id/activity_main_answerArea_1"
+	    android:layout_margin="5dp"
+	    android:layout_alignParentBottom="true"
+	    android:layout_toLeftOf="@+id/activity_main_answerArea_2"
+	    style="@style/AnswerAreaStyle" />	
+	<jp.ne.docomo.smt.dev.narabetehiragana.AnswerAreaView
+	    android:id="@+id/activity_main_answerArea_2"
+	    android:layout_margin="5dp"
+	    android:layout_alignParentBottom="true"
+	    android:layout_centerHorizontal="true"
+	    style="@style/AnswerAreaStyle" />	
+	<jp.ne.docomo.smt.dev.narabetehiragana.AnswerAreaView
+	    android:id="@+id/activity_main_answerArea_3"
+	    android:layout_margin="5dp"
+	    android:layout_alignParentBottom="true"
+	    android:layout_toRightOf="@+id/activity_main_answerArea_2"
+	    style="@style/AnswerAreaStyle" />
+	
+	
+	<!-- 「つぎのもんだいへ」ボタン -->
+	<Button 
+	    android:id="@+id/activity_main_btn_nextQuestion"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_centerHorizontal="true"
+	    android:layout_below="@+id/activity_main_anchor_1"
+	    android:layout_marginTop="10dp"
+	    android:visibility="gone"
+	    android:text="@string/tugi_no_mondai_he"
+	    android:textSize="19sp"
+	    style="@style/BaseButtonStyle"/>
+		
+	<!-- 「これでもんだいはおわりです！　けっかをみる」ボタン -->
+	<Button 
+	    android:id="@+id/activity_main_btn_showAllQuestionsResult"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_centerHorizontal="true"
+	    android:layout_below="@+id/activity_main_anchor_1"
+	    android:layout_marginTop="10dp"
+	    android:visibility="gone"
+	    android:text="@string/kore_de_mondai_ha_owari_desu_kekka_wo_miru"
+	    android:textSize="19sp"
+	    style="@style/BaseButtonStyle"/>
+	
+	
+	
+	
+</RelativeLayout>

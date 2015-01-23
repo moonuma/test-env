@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    
+  	<!-- 文字カードのテキスト色 -->
+    <color name="text_character_card">#505050</color>
+    
+    
+    <!-- メッセージボードやボタンなど白ベース背景の文字色 -->
+    <color name="text_white_base_message">#808080</color>
+    
+    
+</resources>

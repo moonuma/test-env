@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ならべてひらがな</string>
+    
+    <string name="yek_fo_yek">"All Rights Reserved"</string>
+    <string name="infomation">インフォメーション</string>
+    <string name="json_libraries_list">\u2022 jackson-annotations.jar\n\u2022 jackson-core.jar\n\u2022 jackson-databind.jar</string>
+        
+    
+    <string name="volume_zero">音量の警告</string>
+    <string name="desc_volume_zero">端末の音量設定が０になっています。\nこのアプリは音声を再生しますので音量を上げてください。</string>
+    
+    <string name="close">閉じる</string>
+    <string name="error">エラー</string>
+    <string name="desc_of_connection_error">ネットワークに接続できません。\n音声の再生にはネットワーク接続が必要です。</string>
+    <string name="desc_of_server_limited_error">一時的に音声が再生できない状態です。\nしばらく経ってからご利用ください。</string>
+    <string name="desc_of_fatal_error">何らかの問題により音声が再生できません。\nアプリが最新でない場合はアップデートしてください。</string>
+    
+    
+    <string name="seikai">せいかい！</string>
+    <string name="zan_nen_mou_ichido">ざんねん！ もういちど！</string>
+    <string name="zan_nen_mou_ichido_for_accent">残念！もう一度！</string>
+    <string name="tugi_no_mondai_he">つぎのもんだいへ</string>
+    <string name="kore_de_mondai_ha_owari_desu_kekka_wo_miru">これでもんだいはおわりです！\n\nけっかをみる</string>
+    <string name="kekka">けっか</string>
+	<string name="moji_wo_narabi_kaete_miyou">もじをならびかえてみよう！</string>
+	<string name="mon_me">もんめ</string>
+	
+	<string name="mon_chu">もんちゅう\u2026</string>
+	<string name="mon">もん</string>
+	<string name="seikai_desu">せいかいです！</string>
+	<string name="tugi_no_mondai_wo_toku">つぎのもんだいをとく</string>
+	
+	<string name="koe_wo_kaeru">こえをかえる</string>
+	
+</resources>

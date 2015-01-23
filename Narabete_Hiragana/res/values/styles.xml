@@ -1,0 +1,54 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    
+    
+    <!-- 凹んだように見える白いシャドウを持つテキストスタイル -->
+    <style name="WhiteShadowTextStyle">
+        <item name="android:shadowColor">#FFFFFF</item>
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowDy">2</item>
+        <item name="android:shadowRadius">1</item>
+    </style>
+    
+    
+    <!-- アプリ基準のテキストスタイル -->
+    <style name="BaseTextStyle" parent="@style/WhiteShadowTextStyle">
+        <item name="android:textColor">@color/text_white_base_message</item>
+    </style>
+    
+    
+    <!-- アプリ基準の白ボタンスタイル -->
+    <style name="BaseButtonStyle" parent="@style/BaseTextStyle">
+        <item name="android:background">@drawable/bg_white_button</item>
+    </style>
+    
+    
+    <!-- 話者選択ボタンのスタイル -->
+    <style name="VoiceSelectImageButtonStyle">
+        <item name="android:layout_width">45dp</item>
+        <item name="android:layout_height">45dp</item>
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:background">@null</item>
+        <item name="android:src">@drawable/btn_voice</item>
+        <item name="android:scaleType">centerInside</item>
+    </style>
+    
+        
+</resources>

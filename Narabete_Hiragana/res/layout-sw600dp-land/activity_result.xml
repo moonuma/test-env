@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@drawable/bg_main">    
+   		
+	<!-- 「たいへんよくできました」という画像などを表示するImageView -->
+	<ImageView
+	    android:id="@+id/activity_result_imgView_top"
+	    android:layout_width="match_parent"
+	    android:layout_height="0dp"
+	    android:layout_weight="1"
+	    android:padding="15dp"
+	    android:scaleType="centerInside"
+	    android:background="@null"
+	    android:src="@null"
+	    android:contentDescription="@null" />
+	
+	<!-- 「~~もんせいかいです！」とテキスト表記するグループ -->
+	<LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:orientation="vertical"
+        android:background="@drawable/bg_messageboard" >   
+    	<TextView 
+	        android:id="@+id/activity_result_textView_numOfAllQuestion"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="left"
+	        android:gravity="center"
+	        android:text="@string/mon_chu"
+	        android:textSize="17sp"
+	        style="@style/BaseTextStyle" />	 
+        <TextView 
+	        android:id="@+id/activity_result_textView_numOfRightQuestion"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_margin="25dp"
+	        android:layout_gravity="center"
+	        android:gravity="center"
+	        android:text="@string/mon"
+	        android:textSize="22sp"
+	       style="@style/BaseTextStyle" />
+        <TextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="right"
+	        android:gravity="center"
+	        android:text="@string/seikai_desu"
+	        android:textSize="17sp"
+	       style="@style/BaseTextStyle" />	 	 	        
+    </LinearLayout>
+    
+	
+	<!-- 「つぎのもんだいをとく」ボタンを内包するグループ -->
+	<FrameLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="0dp"
+	    android:layout_weight="1">
+	    <Button 
+		    android:id="@+id/activity_result_btn_oneMoreGame"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_marginTop="10dp"
+		    android:layout_gravity="center"
+		    android:text="@string/tugi_no_mondai_wo_toku"
+		    android:textSize="19sp"
+		    style="@style/BaseButtonStyle"/>
+	</FrameLayout>
+    
+</LinearLayout>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <!-- 単語一覧。3文字のみ -->
+    <!-- 発音補助用の漢字等を@で区切って記述できる -->
+	<string-array name="hiragana_words">
+		<item>あさひ@朝日</item>
+		<item>あそび@遊び</item>
+		<item>あたま@頭</item>
+		<item>いたち@イタチ</item>
+		<item>うさぎ@ウサギ</item>
+		<item>えがお@笑顔</item>
+		<item>おかし@お菓子</item>
+		<item>おふろ@お風呂</item>
+		<item>かおり@香り</item>
+		<item>かがみ</item>
+		<item>かざり@飾り</item>
+		<item>かしゅ@歌手</item>
+		<item>かつお@鰹</item>
+		<item>かっぱ@河童</item>
+		<item>かつを@かつを</item>
+		<item>からす@烏</item>
+		<item>かをり@かをり</item>
+		<item>きけん@危険</item>
+		<item>きしゃ@汽車</item>
+		<item>きせき@キセキ</item>
+		<item>きっぷ@切符</item>
+		<item>きもち@気持ち</item>
+		<item>くもり@曇り</item>
+		<item>こころ@心</item>
+		<item>ごはん@ご飯</item>
+		<item>ざっし@雑誌</item>
+		<item>さんぽ@散歩</item>
+		<item>しぜん@自然</item>
+		<item>せなか@背中</item>
+		<item>そざい@素材</item>
+		<item>だいち@大地</item>
+		<item>たぬき@狸</item>
+		<item>たまご@卵</item>
+		<item>ちくわ@竹輪</item>
+		<item>つくえ@机</item>
+		<item>つづき@続き</item>
+		<item>つばめ@燕</item>
+		<item>てがみ@手紙</item>
+		<item>てくび@手首</item>
+		<item>でんち@電池</item>
+		<item>でんわ@電話</item>
+		<item>どうろ@道路</item>
+		<item>とびら@扉</item>
+		<item>とんぼ@トンボ</item>
+		<item>なると</item>
+		<item>にっき@日記</item>
+		<item>にほん</item>
+		<item>にんき@人気</item>
+		<item>ぬりえ@塗り絵</item>
+		<item>ねずみ@ネズミ</item>
+		<item>ねんど@粘土</item>
+		<item>はさみ</item>
+		<item>ばしょ@場所</item>
+		<item>はたけ@畑</item>
+		<item>はっぱ@葉っぱ</item>
+		<item>はっぴ</item>
+		<item>はなぢ@鼻血</item>
+		<item>はなび@花火</item>
+		<item>はやし@林</item>
+		<item>びじん@美人</item>
+		<item>ひつじ@羊</item>
+		<item>ひなた@日なた</item>
+		<item>ひよこ@ヒヨコ</item>
+		<item>ふとん@布団</item>
+		<item>へいき@兵器</item>
+		<item>はへん@破片</item>
+		<item>ぺっと@ペット</item>
+		<item>べんり@便利</item>
+		<item>ほたる@蛍</item>
+		<item>ほのお</item>
+		<item>まくら@枕</item>
+		<item>むすこ</item>
+		<item>むすめ</item>
+		<item>もぐら</item>
+		<item>やかん@やかん</item>
+		<item>ゆうひ@夕日</item>
+		<item>ゆのみ@湯のみ</item>
+		<item>ゆぶね@湯船</item>
+		<item>よぞら@夜空</item>
+		<item>れきし@歴史</item>
+		<item>れもん@レモン</item>
+		<item>わなげ@輪投げ</item>
+	</string-array>
+    
+    
+</resources>

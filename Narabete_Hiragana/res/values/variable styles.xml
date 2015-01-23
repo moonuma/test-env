@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+		<!-- 端末の種類によって変更されるスタイル群 -->
+		<!-- 通常スマートフォン向け -->
+		<!-- このファイルの内容を変更した際は、必要に応じてタブレット向けのファイル【values-sw600dp/variable_styles.xml】も変更すること -->
+
+
+<resources>
+    
+    <!-- 文字カード（Button）のスタイル -->
+    <style name="CharCardButtonStyle">
+        <item name="android:layout_width">90dp</item>
+        <item name="android:layout_height">90dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">38sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/text_character_card</item>
+        <item name="android:shadowColor">#FFFFFF</item>
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowDy">2</item>
+        <item name="android:shadowRadius">1</item>
+        <item name="android:background">@drawable/card</item>
+    </style>
+    
+    
+    <!-- 答えのドロップ領域のスタイル。width・heightは文字カードのサイズに合わせて調整すること -->
+    <style name="AnswerAreaStyle">
+        <item name="android:layout_width">93dp</item>
+        <item name="android:layout_height">93dp</item>
+        <item name="android:background">@drawable/bg_answer_area</item>
+    </style>
+    
+</resources>
